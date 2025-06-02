@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Personal Portfolio | Krishna Agarwal</title>
+
+    <!-- Boxicons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css"> <!-- if inside css folder -->
+
+  </head>
+
+  <body>
+    <!--  =================   Header  =================  -->
+    <header class="header" id="header">
+      <a href="#home" class="logo">Portfolio</a>
+
+      <i class="bx bx-menu" id="menu-icon" aria-label="Toggle navigation"></i>
+
+      <nav class="navbar" aria-label="Primary">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#capabilities">Capabilities</a>
+        <a href="#portfolio">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <!--  =================   Home  =================  -->
+    <section class="home" id="home">
+      <div class="home-content">
+        <h3>Hello, it's me</h3>
+        <h1>KRISHNA AGARWAL</h1>
+        <h3>And I'm an <span>Electronics &amp; Communication Engineer</span></h3>
+        <p>
+          I’m especially inspired by how IoT can revolutionize fields like smart
+          agriculture, renewable energy management, and urban infrastructure. I
+          enjoy building systems that connect hardware with intelligent software
+          to solve real‑world problems.
+        </p>
+
+        <div class="social-media">
+          <a href="mailto:krishna19082004@gmail.com" target="_blank" aria-label="Email"><i class='bx bx-envelope'></i></a>
+          <a href="#" aria-label="Twitter"><i class="bx bxl-twitter"></i></a>
+          <a href="https://www.instagram.com/krishna_19agarwal?igsh=YmZ3bmZmbjJnZ2Zu" target="_blank" aria-label="Instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/krishna-agarwal-03b524288/" target="_blank" aria-label="LinkedIn"><i class="bx bxl-linkedin"></i></a>
+        </div>
+
+        <a href="./resume.pdf" class="btn" download>Download CV</a>
+      </div>
+
+      <div class="home-img">
+        <img src="./images/pic.jpg" alt="Krishna Agarwal" width="300" />
+      </div>
+    </section>
+
+    <!--  =================   About  =================  -->
+    <section class="about" id="about">
+      <div class="about-content">
+        <h2 class="heading">About <span>Me</span></h2>
+        <h3>Electronics Engineer</h3>
+        <p>
+          Hello! I’m Krishna Agarwal, currently pursuing a B.Tech in Electronics and Communication Engineering. I have a strong passion for Internet of Things (IoT) and its integration with renewable energy systems. My interests include developing smart solutions for energy management, agriculture, and urban planning. I'm skilled in C++, have hands-on experience through various internships in IoT, Data Structures, and Ethical Hacking, and I'm always eager to explore new technologies. I also enjoy exploring topics like astronomy and the cosmos in my free time. Through my portfolio, I aim to showcase projects and experiences that reflect my enthusiasm for innovation and learning.
+        </p>
+        <a href="#portfolio" class="btn">Read More</a>
+      </div>
+    </section>
+
+    <!--  =================   Capabilities  =================  -->
+    <section class="capabilities" id="capabilities">
+      <h2 class="heading">My <span>Capabilities</span></h2>
+
+      <div class="capabilities-container">
+        <div class="capabilities-box">
+          <i class="bx bx-devices"></i>
+          <h3>Electronics Circuit Design &amp; Simulation</h3>
+          <p>Designing and simulating electronic circuits using tools like Proteus...</p>
+          <a href="#" class="btn">Read More</a>
+        </div>
+
+        <div class="capabilities-box">
+          <i class="bx bx-rfid"></i>
+          <h3>Smart System Concepts</h3>
+          <p>Working on conceptual models for smart agriculture, home automation, etc.</p>
+          <a href="#" class="btn">Read More</a>
+        </div>
+
+        <div class="capabilities-box">
+          <i class="bx bx-microchip"></i>
+          <h3>Robotics Basics</h3>
+          <p>Working with motors, sensors, and controllers for simple robotic projects.</p>
+          <a href="#" class="btn">Read More</a>
+        </div>
+      </div>
+    </section>
+
+    <!--  =================   Portfolio  =================  -->
+    <section class="portfolio" id="portfolio">
+      <h2 class="heading">Latest <span>Projects</span></h2>
+
+      <div class="portfolio-container">
+        <div class="portfolio-box">
+          <img src="./images/home2.jpg" alt="Home Automation System" />
+          <div class="portfolio-layer">
+            <h4>Home Automation System</h4>
+            <p>Control appliances using smartphones for a smart home experience.</p>
+            <a href="#"><i class="bx bx-link"></i></a>
+          </div>
+        </div>
+
+        <div class="portfolio-box">
+          <img src="./images/java.png" alt="Chat App" />
+          <div class="portfolio-layer">
+            <h4>Simple Chat Application</h4>
+            <p>Multi-user chat app showcasing Java networking and OOP.</p>
+            <a href="#"><i class="bx bx-link"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  =================   Contact  =================  -->
+    <section class="contact" id="contact">
+      <h2 class="heading">Contact <span>Me!</span></h2>
+      <form action="#">
+        <div class="input-box">
+          <input type="text" placeholder="Full Name" required />
+          <input type="email" placeholder="Email Address" required />
+        </div>
+        <div class="input-box">
+          <input type="tel" placeholder="Mobile Number" required />
+          <input type="text" placeholder="Subject" required />
+        </div>
+        <textarea cols="30" rows="10" placeholder="Your Message" required></textarea>
+        <input type="submit" value="Send Message" class="btn" />
+      </form>
+    </section>
+
+    <!--  =================   Footer  =================  -->
+    <footer class="footer">
+      <div class="footer-text">
+        <p>&copy; 2025 Krishna Agarwal | All Rights Reserved</p>
+      </div>
+
+      <div class="footer-iconTop">
+        <a href="#home" aria-label="Back to top"><i class="bx bx-up-arrow-alt"></i></a>
+      </div>
+    </footer>
+
+    <!--  =================   Scripts  =================  -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="./js/script.js" defer></script>
+  </body>
+</html>
