@@ -14,11 +14,11 @@
 
 /* =====================  Variables  ===================== */
 :root {
-  --bg-color: #000116;
-  --second-bg-color: #000116;
-  --text-color: #f60909;
-  --main-color: rgb(253, 18, 53);
-  --accent-color: #00e5ff;
+  --bg-color: linear-gradient(to top, #0a0a0a, #1a1a1a, #0a0a0a);
+  --second-bg-color: #1f1f1f;
+  --text-color: #ffffff;
+  --main-color: #444444;
+  --accent-color: #888888;
 }
 
 /* =====================  Base  ===================== */
@@ -76,7 +76,7 @@ section {
 
 .navbar a:hover,
 .navbar a.active {
-  color: var(--main-color);
+  color: var(--accent-color);
 }
 
 #menu-icon {
@@ -116,7 +116,7 @@ section {
 
 .home-content span,
 span {
-  color: var(--main-color);
+  color: var(--accent-color);
 }
 
 .home-content p {
@@ -130,36 +130,36 @@ span {
   align-items: center;
   width: 3rem;
   height: 3rem;
-  background: #f5f4f4;
-  border: 0.2rem solid var(--main-color);
+  background: var(--second-bg-color);
+  border: 0.2rem solid var(--accent-color);
   border-radius: 50%;
   font-size: 2rem;
-  color: var(--main-color);
+  color: var(--accent-color);
   margin: 3rem 1.5rem 3rem 0;
   transition: 0.5s ease;
 }
 
 .social-media a:hover {
-  background: var(--main-color);
+  background: var(--accent-color);
   color: var(--second-bg-color);
-  box-shadow: 0 0 1rem var(--main-color);
+  box-shadow: 0 0 1rem var(--accent-color);
 }
 
 .btn {
   display: inline-block;
   padding: 1rem 2.8rem;
-  background: var(--main-color);
+  background: var(--accent-color);
   color: var(--second-bg-color);
   border-radius: 4rem;
   font-size: 1.6rem;
   letter-spacing: 0.1rem;
   font-weight: 600;
   transition: 0.5s ease;
-  box-shadow: 0 0 1rem var(--main-color);
+  box-shadow: 0 0 1rem var(--accent-color);
 }
 
 .btn:hover {
-  background: var(--text-color);
+  background: var(--main-color);
   box-shadow: none;
   color: var(--bg-color);
 }
@@ -167,7 +167,7 @@ span {
 .home-img img {
   max-width: 35rem;
   border-radius: 2rem;
-  box-shadow: 0 0 2rem var(--main-color);
+  box-shadow: 0 0 2rem var(--accent-color);
   animation: floatImage 4s ease-in-out infinite;
 }
 
@@ -198,7 +198,7 @@ span {
 .about-img img {
   width: 260px;
   border-radius: 1.5rem;
-  box-shadow: 0 0 1rem var(--main-color);
+  box-shadow: 0 0 1rem var(--accent-color);
   object-fit: cover;
 }
 
@@ -221,14 +221,14 @@ span {
 /* =====================  capabilities  ===================== */
 .capabilities {
   padding: 100px 9%;
-  background-color: #0d0d0d;
+  background-color: #0a0a0a;
 }
 
 .capabilities h2 {
   text-align: center;
   font-size: 4rem;
   margin-bottom: 4rem;
-  color: #ffffff;
+  color: var(--text-color);
 }
 
 .capabilities-container {
@@ -240,29 +240,29 @@ span {
 }
 
 .capabilities-box {
-  background: #111111;
+  background: #141414;
   padding: 3rem 2rem;
   border-radius: 1.5rem;
   text-align: center;
   flex: 1 1 30rem;
   border: 1px solid #222;
   transition: 0.4s ease;
-  box-shadow: 0 0 10px rgba(0, 255, 255, 0.1);
+  box-shadow: 0 0 10px rgba(136, 136, 136, 0.1);
 }
 
 .capabilities-box:hover {
   transform: translateY(-10px);
-  box-shadow: 0 0 25px rgba(0, 255, 255, 0.3);
+  box-shadow: 0 0 25px rgba(136, 136, 136, 0.3);
 }
 
 .capabilities-box h3 {
   font-size: 2.8rem;
-  color: #fff;
+  color: var(--text-color);
   margin-bottom: 1rem;
 }
 
 .capabilities-box p {
-  color: #aaa;
+  color: #bbb;
   font-size: 1.5rem;
   margin-bottom: 2.1rem;
   padding: 0 2rem;
@@ -270,7 +270,7 @@ span {
 
 .capabilities-box i {
   font-size: 7rem;
-  color: #ffffff;
+  color: var(--text-color);
 }
 
 .capabilities-box .btn {
@@ -285,7 +285,7 @@ span {
 }
 
 .capabilities-box .btn:hover {
-  background: #00c3d4;
+  background: #666666;
   color: #fff;
   box-shadow: 0 0 25px var(--accent-color);
 }
@@ -301,7 +301,7 @@ span {
 .portfolio-box {
   position: relative;
   border-radius: 3rem;
-  box-shadow: 0 0 1rem var(--bg-color);
+  box-shadow: 0 0 1rem var(--main-color);
   overflow: hidden;
   display: flex;
 }
@@ -321,7 +321,7 @@ span {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.1), var(--main-color));
+  background: linear-gradient(rgba(0, 0, 0, 0.1), var(--accent-color));
   display: flex;
   justify-content: center;
   align-items: center;
@@ -336,7 +336,7 @@ span {
   font-size: 4rem;
   text-align: center;
   margin-bottom: 4rem;
-  color: #ffffff;
+  color: var(--text-color);
 }
 
 .portfolio-box:hover .portfolio-layer {
@@ -345,13 +345,13 @@ span {
 
 .portfolio-layer h4 {
   font-size: 2.2rem;
-  color: #ffffff;
+  color: var(--text-color);
 }
 
 .portfolio-layer p {
   font-size: 1.6rem;
   margin: 0.3rem 0 0.5rem;
-  color: #ffffff;
+  color: var(--text-color);
 }
 
 .portfolio-layer a {
@@ -360,7 +360,7 @@ span {
   align-items: center;
   width: 5rem;
   height: 5rem;
-  background: #ffffff;
+  background: var(--text-color);
   border-radius: 50%;
 }
 
@@ -380,7 +380,7 @@ span {
   font-size: 4rem;
   text-align: center;
   margin-bottom: 4rem;
-  color: #ffffff;
+  color: var(--text-color);
 }
 
 .contact form .input-box {
@@ -395,7 +395,7 @@ span {
   padding: 1.5rem;
   font-size: 1.6rem;
   color: var(--accent-color);
-  background: #333333;
+  background: #1b1b1b;
   border-radius: 0.8rem;
   margin: 0.7rem 0;
 }
@@ -422,13 +422,14 @@ span {
   align-items: center;
   flex-wrap: wrap;
   padding: 2rem 9%;
-  background: #f5deb3;
+  background: #111111;
 }
 
 .footer-text p {
   font-size: 2rem;
   font-style: italic;
   text-align: center;
+  color: var(--text-color);
 }
 
 .footer-iconTop a {
@@ -436,17 +437,17 @@ span {
   justify-content: center;
   align-items: center;
   padding: 0.8rem;
-  background: var(--main-color);
+  background: var(--accent-color);
   border-radius: 0.8rem;
 }
 
 .footer-iconTop a:hover {
-  box-shadow: 0 0 1rem var(--main-color);
+  box-shadow: 0 0 1rem var(--accent-color);
 }
 
 .footer-iconTop a i {
   font-size: 2rem;
-  color: rgb(1, 47, 88);
+  color: var(--second-bg-color);
 }
 
 /* =====================  Media Queries  ===================== */
@@ -503,5 +504,3 @@ span {
     display: block;
   }
 }
-
-
